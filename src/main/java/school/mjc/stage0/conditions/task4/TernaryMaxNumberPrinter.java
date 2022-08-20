@@ -3,9 +3,9 @@ package school.mjc.stage0.conditions.task4;
 public class TernaryMaxNumberPrinter {
     public void printGreatest(int first, int second, int third) {
 
-        int max= first;
+        int max = (first > second) ? (first > third ? first : third) : (second > third ? second : third);
 
-        max = (max<second)? second : (first<third)? third : first ;
+        System.out.println(max);
 
     }
 }
